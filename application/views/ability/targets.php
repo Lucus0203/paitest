@@ -1,6 +1,6 @@
 <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>css/texture.css"/>
 <div class="wrap">
-    <div class="textureCont w960">
+    <div class="textureCont width100">
 
         <div class="texturetip p2015 clearfix"><span class="fLeft pt5"><?php echo $abilityjob['name'] ?>评估</span>
             <div class="fRight">

@@ -165,7 +165,7 @@
 //    };
 </script>
 <div class="wrap">
-    <div class="textureCont w960">
+    <div class="textureCont width100">
         <input id="jobid" type="hidden" value="<?php echo $abilityjob['id'] ?>" />
         <div class="texturetip clearfix"><span class="fLeft mr10"><?php echo $abilityjob['name'] ?>评估标准</span>
             <div class="fRight">

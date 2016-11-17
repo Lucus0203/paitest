@@ -76,7 +76,7 @@
     });
 </script>
 <div class="wrap">
-    <div class="textureCont w960">
+    <div class="textureCont width100">
 
         <div class="texturetip clearfix"><span class="fLeft pt5"><?php echo $student['name'].'《'.$abilityjob['name'] ?>》能力评估</span>
             <div class="fRight">
