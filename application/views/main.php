@@ -46,13 +46,13 @@
                     <a href="#">帮助文档</a>
                 </li>
                 <li>
-                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><i></i>360健康/test<em class="iUp"></em></a>
+                    <a href="<?php echo site_url('center/index/1') ?>" data-toggle="dropdown" class="dropdown-toggle"><i></i><?php echo $loginInfo['real_name'] ?><em class="iUp"></em></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#"><span class="icon-circle"></span>修改密码</a>
+                            <a href="<?php echo site_url('center/index/2') ?>"><span class="icon-circle"></span>修改密码</a>
                         </li>
                         <li>
-                            <a href="#"><span class="icon-circle"></span>退出</a>
+                            <a href="<?php echo site_url('login/loginout') ?>"><span class="icon-circle"></span>退出</a>
                         </li>
                     </ul>
 
@@ -85,47 +85,41 @@
 
         <!-- /.sidebar-shortcuts -->
         <div class="sidebar-scroll-box">
-            <p class="companyNum">公司编号：100281</p>
+            <p class="companyNum">公司编号：<?php echo $loginInfo['company_code'] ?></p>
             <ul class="nav nav-list">
                 <li>
-                    <a href="<?php echo site_url('index/main') ?>" target="backFramework" class="dropdown-toggle"><span class="menu-text"><i class="fa fa-home"></i><s>首页</s></span><b class="fa fa-angle-right arrow "></b> </a>
+                    <a href="<?php echo site_url('index/main') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-home"></i><s>首页</s></span><b class="fa fa-angle-right arrow "></b> </a>
+                </li>
+                <li>
+                    <a href="<?php echo site_url('course/courselist') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-home"></i><s>课程管理</s></span><b class="fa fa-angle-right arrow "></b> </a>
+                </li>
+                <li>
+                    <a href="#" target="backFramework" class="dropdown-toggle"><i class="fa fa-home"></i>人员管理</s></span> <b class="fa fa-angle-right arrow "></b> </a>
                     <ul class="submenu">
                         <li>
-                            <a target="backFramework" href="属性管理.html" class="dropdown-toggle"><i class="fa fa-circle"></i>产品信息管理 </a>
+                            <a href="<?php echo site_url('teacher/teacherlist') ?>" target="backFramework">&middot;讲师管理 </a>
                         </li>
-                        <li>
-                            <a href="商品管理信息.html" target="backFramework" class="dropdown-toggle"><i class="fa fa-circle"></i>商品管理信息 </a>
-                        </li>
-                        <li>
-                            <a href="操作日志.html" target="backFramework" class="dropdown-toggle"><i class="fa fa-circle"></i>操作日志 </a>
-                        </li>
+                        <?php if($loginInfo['role']==1||$roleInfo['department']==1||$roleInfo['student']==1){ ?>
+                            <li>
+                                <a href="<?php echo site_url('department/index') ?>" target="backFramework">&middot;组织架构 </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo site_url('center/index/3') ?>" target="backFramework">&middot;权限设置 </a>
+                            </li>
+                        <?php } ?>
                     </ul>
                 </li>
                 <li>
-                    <a href="套餐信息管理.html" target="backFramework" class="dropdown-toggle"><span class="menu-text"><i class="fa fa-home"></i><s>课程管理</s></span> <b class="fa fa-angle-right arrow "></b> </a>
-                    <ul class="submenu">
-                        <li>
-                            <a href="套餐列表.html" target="backFramework"><i class="fa fa-circle"></i>套餐列表 </a>
-                        </li>
-                    </ul>
+                    <a href="<?php echo site_url('ability/index') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-home"></i><s>能力模型</s></span><b class="fa fa-angle-right arrow "></b> </a>
                 </li>
                 <li>
-                    <a href="商品品类管理.html" target="backFramework" class="dropdown-toggle"><span class="menu-text"><i class="fa fa-home"></i><s>商品品类管理</s></span> <b class="fa fa-angle-right arrow "></b> </a>
+                    <a href="#" target="backFramework" class="dropdown-toggle"><i class="fa fa-home"></i>年度培训计划</s></span> <b class="fa fa-angle-right arrow "></b> </a>
                     <ul class="submenu">
                         <li>
-                            <a href="属性管理.html" target="backFramework"><i class="fa fa-circle"></i>属性管理 </a>
+                            <a href="<?php echo site_url('annualsurvey/index') ?>" target="backFramework">&middot;年度调研 </a>
                         </li>
                         <li>
-                            <a href="后台分类.html" target="backFramework"><i class="fa fa-circle"></i>后台分类 </a>
-                        </li>
-                        <li>
-                            <a href="前台分类.html" target="backFramework"><i class="fa fa-circle"></i>前台分类 </a>
-                        </li>
-                        <li>
-                            <a href="品牌管理.html" target="backFramework"><i class="fa fa-circle"></i>品牌管理 </a>
-                        </li>
-                        <li>
-                            <a href="操作日志.html" target="backFramework"><i class="fa fa-circle"></i>操作日志 </a>
+                            <a href="<?php echo site_url('annualplan/index') ?>" target="backFramework">&middot;培训计划 </a>
                         </li>
                     </ul>
                 </li>

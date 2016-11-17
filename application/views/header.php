@@ -28,7 +28,7 @@ var _hmt = _hmt || [];
 	</head>
 
 	<body>
-
+<!--
 		<div class="headerCom">
 			<div class="inner">
 				<div class="log">
@@ -52,3 +52,4 @@ var _hmt = _hmt || [];
 				</div>
 			</div>
 		</div>
+-->
