@@ -211,7 +211,7 @@
     });
 </script>
 <div class="wrap">
-    <div class="textureCont w960">
+    <div class="textureCont width100">
 
         <div class="texturetip p2015 clearfix"><span class="fLeft pt5">所有能力模型</span>
             <div class="fRight">
