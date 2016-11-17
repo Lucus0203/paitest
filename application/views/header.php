@@ -28,28 +28,3 @@ var _hmt = _hmt || [];
 	</head>
 
 	<body>
-<!--
-		<div class="headerCom">
-			<div class="inner">
-				<div class="log">
-					<a href="<?php echo site_url('index/index') ?>"><img src="<?php echo base_url();?>images/logo01.png" alt="培训 派"></a>
-				</div>
-				<ul class="hNavi">
-                                        <?php $this->load->view ( 'h_navi' ); ?>
-				</ul>
-				<div class="loginT">
-                                    <?php if(empty($loginInfo)){ ?>
-                                        <img src="<?php echo empty($loginInfo['logo'])?base_url().'images/face_default.png':base_url().'uploads/company_logo/'.$loginInfo['logo'];?>">
-                                    <?php }else{ ?>
-                                        <a href="<?php echo site_url('center/index') ?>"><img src="<?php echo empty($loginInfo['logo'])?base_url().'images/face_default.png':base_url().'uploads/company_logo/'.$loginInfo['logo'];?>"><?php echo $loginInfo['real_name'] ?><i class="ci-right"><s>◇</s></i></a>
-					<ul class="logoList">
-						<li><a href="<?php echo site_url('center/index/1') ?>">公司信息</a></li>
-						<li><a href="<?php echo site_url('center/index/2') ?>">密码修改</a></li>
-                        <?php if($loginInfo['role']==1){ ?><li><a href="<?php echo site_url('center/index/3') ?>">权限设置</a></li><?php } ?>
-						<li><a href="<?php echo site_url('login/loginout') ?>">退出登陆</a></li>
-					</ul>
-                                    <?php } ?>
-				</div>
-			</div>
-		</div>
--->
