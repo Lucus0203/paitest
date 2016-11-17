@@ -1,0 +1,92 @@
+@charset "utf-8";
+body {
+	background: #f6f6f6 url(../images/login_bg.png) repeat-x left top;
+	text-align: center;
+}
+
+.loginReg {
+	text-align: center;
+	margin: auto;
+	padding: 38px 0 0 0;
+	width: 800px;
+	
+}
+
+.loginReg .header a {
+	color: #fff;
+}
+
+.loginReg .header p {
+	color: #fff;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+.loginReg .logCont {
+	background-color: #fff;
+	border:  1px solid #e7e7e7;
+	box-shadow: 1px 1px 5px #ccc;
+	padding-bottom: 70px;
+}
+
+.loginReg .logCont .tit {
+	font-size: 22px;
+	color: #3cb9ca;
+	background-color: #edfafc;
+	padding: 15px 0;
+	margin-bottom: 30px;
+}
+
+.logTab {
+	border-bottom: 1px solid #f0f0f0;
+	margin-bottom: 35px;
+	position: relative;
+	
+}
+
+.logTab ul {
+	width: 345px;
+	margin: 0 auto;
+	font-size: 18px;
+	overflow: hidden;
+	zoom: 1;
+	text-align: left
+}
+
+.logTab li {
+	color: #484848;
+	float: left;
+	margin-right: 35px;
+	padding: 12px 0;
+}
+
+.tabLine{ border-bottom: 1px solid #00bbd3; width: 90px; position:  absolute;left: 243px;}
+
+.logInner {
+	background-color: #fff;
+	width: 345px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.iptBox {
+	margin-bottom: 25px;
+	position: relative;
+}
+
+.iptBox input{ width: 100%;}
+
+
+
+.w157{ width:  175px !important;}
+.label {
+    font-size: 14px;
+    line-height: 30px;
+    padding: 5px 10px;
+    width: 360px;
+    margin-top: 9px;
+}
+.ieTxt{ background-color: #F2DA89; color: #f00; position: fixed; top: 0; width: 100%; line-height: 30px;}
+.ieTxt span{ float: right; padding-right: 30px;}
+
+

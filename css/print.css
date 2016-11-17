@@ -1,0 +1,8 @@
+@media print {
+    .headerCom,.titCom,.topNaviKec01,.footer{
+        display: none;
+    }
+    .textureBox{
+        border: none;
+    }
+}
