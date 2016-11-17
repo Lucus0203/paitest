@@ -22,9 +22,7 @@ class Index extends CI_Controller
         }
     }
 
-
-    public function index()
-    {
+    public function main(){
         $logininfo = $this->_logininfo;
         $company = $this->company_model->get_row(array('code'=>$logininfo['company_code']));
         $sql = "select count(*) as num from " . $this->db->dbprefix('course') . " c where c.company_code = '{$logininfo['company_code']}' and c.isdel=2 ";
@@ -60,6 +58,12 @@ class Index extends CI_Controller
         $this->load->view('header');
         $this->load->view('index', compact('courses_num', 'teachers_num', 'students_num', 'adms_num', 'courses','company'));
         $this->load->view('footer');
+    }
+
+
+    public function index()
+    {
+        $this->load->view('main');
     }
 
     public function guidReaded(){

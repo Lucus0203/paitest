@@ -27,6 +27,6 @@ class Welcome extends CI_Controller {
 	}
         
 	public function index(){
-		redirect('index','index');
+		redirect('index','main');
 	}
 }
