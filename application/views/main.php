@@ -4,10 +4,11 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta charset="utf-8" />
-    <title>信息管理</title>
+    <title>培训派</title>
     <meta name="description" content="overview &amp; stats" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <!-- bootstrap & fontawesome -->
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
@@ -94,7 +95,7 @@
                     <a href="<?php echo site_url('course/courselist') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-book"></i><s>课程管理</s></span></a>
                 </li>
                 <li>
-                    <a href="#" target="backFramework" class="dropdown-toggle"><span class="menu-text"><i class="fa fa-users"></i><s>人员管理</s></span> <b class="fa fa-angle-right arrow "></b> </a>
+                    <a href="JavaScript:;" target="backFramework" class="dropdown-toggle"><span class="menu-text"><i class="fa fa-users"></i><s>人员管理</s></span> <b class="fa fa-angle-right arrow "></b> </a>
                     <ul class="submenu">
                         <li>
                             <a href="<?php echo site_url('teacher/teacherlist') ?>" target="backFramework">&middot;讲师管理 </a>
@@ -113,7 +114,7 @@
                     <a href="<?php echo site_url('ability/index') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-cubes"></i><s>能力模型</s></span><b class="fa fa-angle-right arrow "></b> </a>
                 </li>
                 <li>
-                    <a href="#" target="backFramework" class="dropdown-toggle"><span class="menu-text"><i class="fa fa-line-chart"></i><s>年度培训计划</s></span><b class="fa fa-angle-right arrow "></b></a>
+                    <a href="JavaScript:;" target="backFramework" class="dropdown-toggle"><span class="menu-text"><i class="fa fa-line-chart"></i><s>年度培训计划</s></span><b class="fa fa-angle-right arrow "></b></a>
                     <ul class="submenu">
                         <li>
                             <a href="<?php echo site_url('annualsurvey/index') ?>" target="backFramework">&middot;年度调研 </a>
