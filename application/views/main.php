@@ -156,11 +156,13 @@
 <![endif]-->
 <script src="js/jquery.slimscroll.js"></script>
 <script type="text/javascript">
+
+
     $(document).ready(function() {
         var h = $('.main-container').height();
         $('.sidebar-scroll-box').slimScroll({
             height: h,
-            railVisible: true,
+            railVisible: false,
             alwaysVisible: true
         });
         $('.sidebar li').click(function(){
@@ -168,29 +170,29 @@
                 $(this).closest('.sidebar').removeClass('menu-min');
             }
         })
-    })
+    });
+    window.onresize = function(){
+        $('.sidebar-scroll-box').slimScroll({
+            destroy: true
+        });
+        var h = $('.main-container').height();
+        //alert(h);
+        $('.sidebar-scroll-box').slimScroll({
+            height: h,
+            railVisible: false,
+            alwaysVisible: true
+        });
+    }
 </script>
 
 <script src="js/bootstrap.js"></script>
 
 <!-- ace scripts -->
 <script src="js/ace/elements.scroller.js"></script>
-<script src="js/ace/elements.colorpicker.js"></script>
-<script src="js/ace/elements.fileinput.js"></script>
-<script src="js/ace/elements.typeahead.js"></script>
-<script src="js/ace/elements.wysiwyg.js"></script>
-<script src="js/ace/elements.treeview.js"></script>
-<script src="js/ace/elements.wizard.js"></script>
 <script src="js/ace/elements.aside.js"></script>
 <script src="js/ace/ace.js"></script>
-<script src="js/ace/ace.ajax-content.js"></script>
-<script src="js/ace/ace.touch-drag.js"></script>
 <script src="js/ace/ace.sidebar.js"></script>
 <script src="js/ace/ace.sidebar-scroll-1.js"></script>
-<script src="js/ace/ace.submenu-hover.js"></script>
-<script src="js/ace/ace.widget-box.js"></script>
-<script src="js/ace/ace.widget-on-reload.js"></script>
-<script src="js/ace/ace.searchbox-autocomplete.js"></script>
 </body>
 
 </html>
