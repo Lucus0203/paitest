@@ -94,7 +94,7 @@
                     <a href="<?php echo site_url('course/courselist') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-home"></i><s>课程管理</s></span><b class="fa fa-angle-right arrow "></b> </a>
                 </li>
                 <li>
-                    <a href="#" target="backFramework" class="dropdown-toggle"><i class="fa fa-home"></i>人员管理</s></span> <b class="fa fa-angle-right arrow "></b> </a>
+                    <a href="#" target="backFramework" class="dropdown-toggle"><i class="fa fa-home"></i><s>人员管理</s></span> <b class="fa fa-angle-right arrow "></b> </a>
                     <ul class="submenu">
                         <li>
                             <a href="<?php echo site_url('teacher/teacherlist') ?>" target="backFramework">&middot;讲师管理 </a>
@@ -113,7 +113,7 @@
                     <a href="<?php echo site_url('ability/index') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-home"></i><s>能力模型</s></span><b class="fa fa-angle-right arrow "></b> </a>
                 </li>
                 <li>
-                    <a href="#" target="backFramework" class="dropdown-toggle"><i class="fa fa-home"></i>年度培训计划</s></span> <b class="fa fa-angle-right arrow "></b> </a>
+                    <a href="#" target="backFramework" class="dropdown-toggle"><i class="fa fa-home"></i><s>年度培训计划</s></span> <b class="fa fa-angle-right arrow "></b> </a>
                     <ul class="submenu">
                         <li>
                             <a href="<?php echo site_url('annualsurvey/index') ?>" target="backFramework">&middot;年度调研 </a>
