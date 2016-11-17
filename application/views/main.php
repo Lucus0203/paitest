@@ -113,7 +113,7 @@
                     <a href="<?php echo site_url('ability/index') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-cubes"></i><s>能力模型</s></span><b class="fa fa-angle-right arrow "></b> </a>
                 </li>
                 <li>
-                    <a href="#" target="backFramework" class="dropdown-toggle"><span class="menu-text"><i class="fa fa-line-chart"></i><s>年度培训计划</s></span></a>
+                    <a href="#" target="backFramework" class="dropdown-toggle"><span class="menu-text"><i class="fa fa-line-chart"></i><s>年度培训计划</s></span><b class="fa fa-angle-right arrow "></b></a>
                     <ul class="submenu">
                         <li>
                             <a href="<?php echo site_url('annualsurvey/index') ?>" target="backFramework">&middot;年度调研 </a>
