@@ -173,14 +173,16 @@
     });
     window.onresize = function(){
         $('.sidebar-scroll-box').slimScroll({
-            destroy: true
-        });
-        var h = $('.main-container').height();
-        //alert(h);
-        $('.sidebar-scroll-box').slimScroll({
-            height: h,
-            railVisible: false,
-            alwaysVisible: true
+            destroyAll: true,
+            destroyCallback: function(){
+                var h = $('.main-container').height();
+                //alert(h);
+                $('.sidebar-scroll-box').slimScroll({
+                    height: h,
+                    railVisible: false,
+                    alwaysVisible: true
+                });
+            }
         });
     }
 </script>

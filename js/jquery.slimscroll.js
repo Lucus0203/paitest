@@ -76,7 +76,10 @@
         borderRadius: '7px',
 
         // sets border radius of the rail
-        railBorderRadius : '7px'
+        railBorderRadius : '7px',
+        
+       // 销毁后回调函数
+        destroyCallback: function(){},
       };
 
       var o = $.extend(defaults, options);
@@ -135,7 +138,13 @@
                 me.unwrap();
                 return;
               }
-
+              else if ('destroyAll' in options)
+              {
+                $('.' + o.barClass).remove();
+                $('.' + o.railClass).remove();
+                me.unwrap();
+                options.destroyCallback();
+			  }
               // scroll content by the given offset
               scrollContent(offset, false, true);
             }
@@ -146,7 +155,8 @@
         {
             if ('destroy' in options)
             {
-            	return;
+            // find bar and rail
+                return;
             }
         }
 
