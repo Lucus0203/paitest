@@ -35,6 +35,11 @@ body {
 	width: 960px !important;
 }
 
+
+.width100 {
+	width: 100% !important;
+}
+
 .nobg {
 	background: none #f6f6f6 !important;
 }

@@ -1,6 +1,6 @@
 @charset "utf-8";
 .textureSide {
-	width: 206px;
+	width: 20%;
 	border: 1px solid #ebebeb;
 	padding: 12px 15px;
 	background-color: #fff;
@@ -87,7 +87,7 @@
 
 .textureCont {
 	float: right;
-	width: 710px;
+	width: 75%;
 	background-color: #fff;
 	border: 1px solid #ebebeb;
 }
