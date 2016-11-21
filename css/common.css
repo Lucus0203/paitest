@@ -1165,7 +1165,7 @@ textarea:after {
 
 .listDetail li {
 	float: left;
-	width: 156px;
+	width: 25%;
 	text-align: center;
 	color: #97c2c6;
 	font-size: 16px;
@@ -1229,7 +1229,7 @@ textarea:after {
 .listFunction li {
 	float: left;
 	text-align: center;
-	width: 90px;
+	width: 33%;
 	font-size: 14px;
 }
 
@@ -1626,13 +1626,13 @@ textarea:after {
 }
 
 .nengli .nengliRight {
-	width: 300px;
+	width: 30%;
 	float: right;
 }
 
 .nengli .nengliLeft {
 	float: left;
-	width: 580px;
+	width: 70%;
 }
 
 .nengli .txt {
