@@ -173,9 +173,10 @@ input::-moz-placeholder,
 
 
 .dropdown-menu {
-	background-color: #d6d6d6;
+	background-color: #fff;
 	right: 0;
     left: inherit;
+    min-width: 120px;
 }
 
 .dropdown-menu li {
@@ -183,8 +184,12 @@ input::-moz-placeholder,
 }
 .dropdown-menu> li> a,
 .dropdown-menu> li> a:hover {
-	color: #333;
-	background: none;
+    color: #333;
+    background: none;
+}
+
+.dropdown-menu> li> a:hover {
+    color: #00bbd3;
 }
 
 .icon-circle {
