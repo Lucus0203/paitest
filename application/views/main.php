@@ -165,11 +165,6 @@
             railVisible: false,
             alwaysVisible: true
         });
-        $('.sidebar li').click(function(){
-            if($('.sidebar').hasClass('menu-min')){
-                $(this).closest('.sidebar').removeClass('menu-min');
-            }
-        })
     });
     window.onresize = function(){
         $('.sidebar-scroll-box').slimScroll({
