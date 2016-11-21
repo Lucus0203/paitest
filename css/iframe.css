@@ -445,7 +445,7 @@ input::-moz-placeholder,
 	font-size: 14px;
 	vertical-align:  middle;
 	margin-right: 5px;
-	font-family: arial;
+	font-family: arial;  
 }
 
 no_such_element:-o-prefocus,
