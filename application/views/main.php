@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
     <!--<link rel="stylesheet" href="css/ace-fonts.css" />-->
-    <link rel="stylesheet" href="css/iframe.css" />
+    <link rel="stylesheet" href="css/iframe.css?1121" />
 
     <!--[if lte IE 9]><link rel="stylesheet" href="css/ace-part2.css" class="ace-main-stylesheet" />
     <![endif]-->
@@ -98,14 +98,14 @@
                     <a href="JavaScript:;" target="backFramework" class="dropdown-toggle"><span class="menu-text"><i class="fa fa-users"></i><s>人员管理</s></span> <b class="fa fa-angle-right arrow "></b> </a>
                     <ul class="submenu">
                         <li>
-                            <a href="<?php echo site_url('teacher/teacherlist') ?>" target="backFramework">&middot;讲师管理 </a>
+                            <a href="<?php echo site_url('teacher/teacherlist') ?>" target="backFramework"><i>&bull;</i>讲师管理 </a>
                         </li>
                         <?php if($loginInfo['role']==1||$roleInfo['department']==1||$roleInfo['student']==1){ ?>
                             <li>
-                                <a href="<?php echo site_url('department/index') ?>" target="backFramework">&middot;组织架构 </a>
+                                <a href="<?php echo site_url('department/index') ?>" target="backFramework"><i>&bull;</i>组织架构 </a>
                             </li>
                             <li>
-                                <a href="<?php echo site_url('center/index/3') ?>" target="backFramework">&middot;权限设置 </a>
+                                <a href="<?php echo site_url('center/index/3') ?>" target="backFramework"><i>&bull;</i>权限设置 </a>
                             </li>
                         <?php } ?>
                     </ul>
@@ -117,10 +117,10 @@
                     <a href="JavaScript:;" target="backFramework" class="dropdown-toggle"><span class="menu-text"><i class="fa fa-line-chart"></i><s>年度培训计划</s></span><b class="fa fa-angle-right arrow "></b></a>
                     <ul class="submenu">
                         <li>
-                            <a href="<?php echo site_url('annualsurvey/index') ?>" target="backFramework">&middot;年度调研 </a>
+                            <a href="<?php echo site_url('annualsurvey/index') ?>" target="backFramework"><i>&bull;</i>年度调研 </a>
                         </li>
                         <li>
-                            <a href="<?php echo site_url('annualplan/index') ?>" target="backFramework">&middot;培训计划 </a>
+                            <a href="<?php echo site_url('annualplan/index') ?>" target="backFramework"><i>&bull;</i>培训计划 </a>
                         </li>
                     </ul>
                 </li>
