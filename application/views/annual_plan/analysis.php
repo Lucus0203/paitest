@@ -1,4 +1,4 @@
-<link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>css/kecheng.css"/>
+<link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>css/kecheng.css?112101"/>
 <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>css/texture.css"/>
 <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>css/print.css"/>
 <script src="<?php echo base_url(); ?>js/highcharts/highcharts.js"></script>

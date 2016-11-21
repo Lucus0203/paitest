@@ -1,4 +1,4 @@
-<link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>css/kecheng.css"/>
+<link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>css/kecheng.css?112101"/>
 <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>css/texture.css"/>
 <script type="text/javascript">
     $(document).ready(function () {

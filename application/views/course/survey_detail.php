@@ -5,7 +5,7 @@
             <meta charset="UTF-8">
             <title></title>
             <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>css/common.css" />
-            <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>css/kecheng.css" />
+            <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>css/kecheng.css?112101" />
             <script type="text/javascript" src="<?php echo base_url();?>js/jquery1.83.js"></script>
     </head>
 

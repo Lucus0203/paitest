@@ -44,7 +44,7 @@
         });
     })
 </script>
-<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>css/kecheng.css" />
+<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>css/kecheng.css?112101" />
 <div class="wrap">
     <div class="titCom clearfix"><span class="titSpan"><?php echo $course['title'] ?>  </span><span class="<?php echo $course['status_class']; ?> ml20"><?php echo $course['status_str']; ?></span></div>
     <div class="topNaviKec">

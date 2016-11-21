@@ -1,4 +1,4 @@
-<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>css/kecheng.css" />
+<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>css/kecheng.css?112101" />
 <script type="text/javascript">
     $(document).ready(function(){
         $('#filter_status').change(function(){
