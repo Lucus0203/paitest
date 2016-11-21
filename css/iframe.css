@@ -175,6 +175,7 @@ input::-moz-placeholder,
 .dropdown-menu {
 	background-color: #d6d6d6;
 	right: 0;
+    left: inherit;
 }
 
 .dropdown-menu li {
