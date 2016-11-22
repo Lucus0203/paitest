@@ -50,10 +50,6 @@
 }
 
 .textureSide .flink .iup {
-	background: url(../images/arrow_down.png) no-repeat left top;
-	display: inline-block;
-	width: 15px;
-	height: 13px;
 	float: right;
 	margin-top: 10px;
 }

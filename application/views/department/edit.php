@@ -169,7 +169,7 @@
             <div class="fnavi">
                 <a href="<?php echo site_url('department/index/' . $d['id']) ?>"
                    class="flink <?php echo $current_department['id'] == $d['id'] ? 'on' : '' ?>"><i
-                        class="iup"></i><?php echo $d['name'] ?></a>
+                        class="iup fa fa-angle-down"></i><?php echo $d['name'] ?></a>
                 <ul class="clink departChildren<?php echo $d['id'] ?>">
                     <?php if (!empty($d['departs'])) {
                         foreach ($d['departs'] as $dp) { ?>

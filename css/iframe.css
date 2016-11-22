@@ -91,9 +91,12 @@ input::-moz-placeholder,
 .sidebar {
 	width: 225px;
 	float: left;
-	background-color: #e4e4e4;
+	background-color: #ffffff;
 }
 
+.navbar-container{
+    max-width: 1400px;
+}
 .navbar {
 	background-color: #00bbd3;
 	border-radius: 0;
@@ -109,6 +112,9 @@ input::-moz-placeholder,
 	background-color: #a5b2c5;
 	color: #fff;
 	margin: 15px 6px 4px;
+}
+.navbar .pull-right{
+    margin-right: 35px;
 }
 
 .navbar .navbar-toggle {
@@ -205,8 +211,6 @@ input::-moz-placeholder,
 }
 
 
-/*宸︿晶*/
-
 .sidebar> .nav-search {
 	height: 41px;
 	padding: 6px 0;
@@ -286,6 +290,7 @@ input::-moz-placeholder,
 
 .sidebar {
 	position: relative;
+    border: 1px solid #ebebeb;
 }
 
 .sidebar .iRight {
@@ -321,7 +326,12 @@ input::-moz-placeholder,
 	font-size: 18px;
 	text-decoration: none;
 	background: none;
-	color: #333333;
+	color: #444444;
+}
+
+.nav-list .open > a, .nav-list .open > a:hover, .nav-list .open > a:focus,.nav-list> li> a:hover,.nav-list> li> a:focus  {
+    background-color: #09BED5;
+    color: #ffffff;
 }
 
 .nav-list> li> a s{ text-decoration:none;white-space:nowrap; margin-left: 8px;}
@@ -353,7 +363,6 @@ input::-moz-placeholder,
 	top: 13px;
 	padding: 0;
 	text-align: center;
-	color: #999999;
 }
 
 .nav-list> li.separator {
@@ -389,7 +398,7 @@ input::-moz-placeholder,
 	position: relative;
 	padding: 10px 0 10px 58px;
 	margin: 0;
-	color: #666;
+	color: #7c7c7c;
 	text-decoration: none;
 	font-size: 16px;
 }
@@ -404,11 +413,7 @@ input::-moz-placeholder,
 .nav-list> li .submenu> li.on> a,
 .nav-list> li .submenu> li> a:hover {
 	text-decoration: none;
-	background-color:  #d6d6d6;
-}
-
-.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
-	background:none;
+    color:#09bed5;
 }
 
 
@@ -696,7 +701,7 @@ no_such_element:-o-prefocus,
 .sidebar.menu-min,
 .sidebar.menu-min.compact,
 .sidebar.menu-min.navbar-collapse {
-	width: 50px;
+	width: 70px;
 }
 
 .sidebar.menu-min+ .main-content {

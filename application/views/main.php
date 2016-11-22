@@ -37,15 +37,15 @@
 
         <div class=" pull-right">
             <ul class="top-nav">
-                <li>
-                    <a href="#"><i class="fa fa-bell" aria-hidden="true"></i>消息</a>
-                </li>
-                <li>
-                    <a href="#">客服中心</a>
-                </li>
-                <li>
-                    <a href="#">帮助文档</a>
-                </li>
+<!--                <li>-->
+<!--                    <a href="#"><i class="fa fa-bell" aria-hidden="true"></i>消息</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">客服中心</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">帮助文档</a>-->
+<!--                </li>-->
                 <li>
                     <a href="<?php echo site_url('center/index/1') ?>" data-toggle="dropdown" class="dropdown-toggle"><i></i><?php echo $loginInfo['real_name'] ?>&nbsp;<i class="fa fa-angle-down fa-lg"></i> </a>
                     <ul class="dropdown-menu">
@@ -89,7 +89,7 @@
             <p class="companyNum">公司编号：<?php echo $loginInfo['company_code'] ?></p>
             <ul class="nav nav-list">
                 <li>
-                    <a href="<?php echo site_url('index/main') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-home"></i><s>首页</s></span></a>
+                    <a href="<?php echo site_url('index/main') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-home fa-lg"></i><s>首页</s></span></a>
                 </li>
                 <li>
                     <a href="<?php echo site_url('course/courselist') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-book"></i><s>课程管理</s></span></a>
@@ -104,14 +104,11 @@
                             <li>
                                 <a href="<?php echo site_url('department/index') ?>" target="backFramework"><i>&bull;</i>组织架构 </a>
                             </li>
-                            <li>
-                                <a href="<?php echo site_url('center/index/3') ?>" target="backFramework"><i>&bull;</i>权限设置 </a>
-                            </li>
                         <?php } ?>
                     </ul>
                 </li>
                 <li>
-                    <a href="<?php echo site_url('ability/index') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-cubes"></i><s>能力模型</s></span><b class="fa fa-angle-right arrow "></b> </a>
+                    <a href="<?php echo site_url('ability/index') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-cubes"></i><s>能力模型</s></span> </a>
                 </li>
                 <li>
                     <a href="JavaScript:;" target="backFramework" class="dropdown-toggle"><span class="menu-text"><i class="fa fa-line-chart"></i><s>年度培训计划</s></span><b class="fa fa-angle-right arrow "></b></a>
@@ -121,6 +118,20 @@
                         </li>
                         <li>
                             <a href="<?php echo site_url('annualplan/index') ?>" target="backFramework"><i>&bull;</i>培训计划 </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="JavaScript:;" target="backFramework" class="dropdown-toggle"><span class="menu-text"><i class="fa fa-cogs"></i><s>系统设置</s></span><b class="fa fa-angle-right arrow "></b></a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="<?php echo site_url('center/index/1') ?>" target="backFramework"><i>&bull;</i>公司信息 </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo site_url('center/index/2') ?>" target="backFramework"><i>&bull;</i>密码修改 </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo site_url('center/index/3') ?>" target="backFramework"><i>&bull;</i>权限设置 </a>
                         </li>
                     </ul>
                 </li>
@@ -171,7 +182,6 @@
             destroyAll: true,
             destroyCallback: function(){
                 var h = $('.main-container').height();
-                //alert(h);
                 $('.sidebar-scroll-box').slimScroll({
                     height: h,
                     railVisible: false,

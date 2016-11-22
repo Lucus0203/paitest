@@ -140,6 +140,7 @@ textarea:after {
 	zoom: 1;
 	clear: both;
 	padding: 10px 0;
+    max-width: 1100px;
 }
 
 .footer a {
@@ -148,10 +149,10 @@ textarea:after {
 }
 
 .wrap {
-	margin: 0 auto;
+	margin: 0 10px;
 	padding: 20px 25px 0 25px;
     min-height: 500px;
-    min-width: 980px;
+    max-width: 1100px;
 }
 
 .comBox {
