@@ -229,9 +229,10 @@
 						//stone 不影响其他的导航//self.hide(this, self.settings.duration, false);
 					}
 				});
-				$(parent_ul).find('.submenu li').click(function() {
-					$(this).addClass('on').siblings().removeClass('on');
-				})
+                $(parent_ul).find('.submenu li').click(function() {
+                    $('.submenu li').removeClass('on');
+                    $(this).addClass('on');
+                })
 			}
 
 			if(sub_hidden) { //being shown now
