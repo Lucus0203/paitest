@@ -9,6 +9,9 @@
     <script type="text/javascript" src="<?php echo base_url();?>js/jquery1.83.js"></script>
     <script type="text/javascript" src="<?php echo base_url();?>js/jquery.placeholder.min.js"></script>
     <script type="text/javascript">
+        if($(window.parent.document).find(".navbar").length>0){
+            window.parent.location='<?php echo site_url('login/loginout'); ?>';
+        }
         var _hmt = _hmt || [];
         (function() {
             var hm = document.createElement("script");

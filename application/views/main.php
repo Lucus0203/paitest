@@ -177,16 +177,16 @@
             alwaysVisible: true
         });
         $('.nav-list > li').click(function () {
-            $('.nav-list > li a,.nav-list > li').removeClass('on');
-            $(this).addClass('on').find('a').eq(0).addClass('on');
             if($(this).find('li').length>0){
                 $('.submenu li.on').parent().prev().addClass('on');
             }else{
+                $('.nav-list > li a,.nav-list > li').removeClass('on');
+                $(this).addClass('on').find('a').eq(0).addClass('on');
                 $('.submenu li').removeClass('on');
             }
         });
         $('.submenu li').click(function() {
-            $('.submenu li').removeClass('on');
+            $('.nav-list > li a,.nav-list > li,.submenu li').removeClass('on');
             $(this).addClass('on');
         });
         $('.top-nav .dropdown-toggle').closest('li').hover(function(){
