@@ -178,12 +178,12 @@ input::-moz-placeholder,
 	vertical-align: middle;
 }
 
-
 .dropdown-menu {
 	background-color: #fff;
 	right: 0;
     left: inherit;
     min-width: 120px;
+    margin-top: 0;
 }
 
 .dropdown-menu li {
