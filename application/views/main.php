@@ -180,6 +180,11 @@
             $('.submenu li').removeClass('on');
             $(this).addClass('on');
         });
+        $('.dropdown-toggle').closest('li').hover(function(){
+            $(this).addClass('open');
+        },function(){
+            $(this).removeClass('open');
+        })
     });
     window.onresize = function(){
         $('.sidebar-scroll-box').slimScroll({
