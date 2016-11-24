@@ -180,7 +180,7 @@
             $('.submenu li').removeClass('on');
             $(this).addClass('on');
         });
-        $('.dropdown-toggle').closest('li').hover(function(){
+        $('.top-nav .dropdown-toggle').closest('li').hover(function(){
             $(this).addClass('open');
         },function(){
             $(this).removeClass('open');
