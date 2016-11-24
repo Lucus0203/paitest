@@ -5,7 +5,7 @@
 		<title>培训派</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
         <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>css/jquery-ui.css" />
-        <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>css/common.css?112101" />
+        <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>css/common.css?112401" />
 		<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>css/jquery.simple-dtpicker.css" />
 		<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>css/font-awesome.min.css" />
 

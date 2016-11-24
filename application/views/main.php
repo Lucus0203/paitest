@@ -47,7 +47,7 @@
 <!--                    <a href="#">帮助文档</a>-->
 <!--                </li>-->
                 <li>
-                    <a href="<?php echo site_url('center/index/1') ?>" class="dropdown-toggle"><i></i><?php echo $loginInfo['real_name'] ?>&nbsp;<i class="fa fa-angle-down fa-lg"></i> </a>
+                    <a href="<?php echo site_url('center/index/1') ?>" target="backFramework" class="dropdown-toggle"><i></i><?php echo $loginInfo['real_name'] ?>&nbsp;<i class="fa fa-angle-down fa-lg"></i> </a>
                     <ul class="dropdown-menu">
                         <li>
                             <a target="backFramework" href="<?php echo site_url('center/index/2') ?>"><span class="icon-circle"></span>修改密码</a>
@@ -175,6 +175,15 @@
             height: h,
             railVisible: false,
             alwaysVisible: true
+        });
+        $('.nav-list > li').click(function () {
+            $('.nav-list > li a,.nav-list > li').removeClass('on');
+            $(this).addClass('on').find('a').eq(0).addClass('on');
+            if($(this).find('li').length>0){
+                $('.submenu li.on').parent().prev().addClass('on');
+            }else{
+                $('.submenu li').removeClass('on');
+            }
         });
         $('.submenu li').click(function() {
             $('.submenu li').removeClass('on');

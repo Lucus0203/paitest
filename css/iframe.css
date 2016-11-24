@@ -329,8 +329,10 @@ input::-moz-placeholder,
 	background: none;
 	color: #444444;
 }
-
-.nav-list .open > a, .nav-list .open > a:hover, .nav-list .open > a:focus,.nav-list> li> a:hover,.nav-list> li> a:focus  {
+.nav > li > a:hover, .nav > li > a:focus,.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+    background-color: #ffffff;
+}
+.nav-list .open > a:hover,.nav-list> li> a:hover,.nav-list .open > a.on,.nav-list li > a.on {
     background-color: #09BED5;
     color: #ffffff;
 }

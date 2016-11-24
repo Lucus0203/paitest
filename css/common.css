@@ -152,7 +152,8 @@ textarea:after {
 	margin: 0 10px;
 	padding: 20px 25px 0 25px;
     min-height: 500px;
-    max-width: 1100px;
+    min-width: 910px;
+    max-width: 1200px;
 }
 
 .comBox {
