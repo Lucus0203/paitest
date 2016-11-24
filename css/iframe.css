@@ -455,7 +455,7 @@ input::-moz-placeholder,
 	display: block;
 }
 
-.nav-list li.open>.submenu i{
+.nav-list li>.submenu i{
 	font-size: 14px;
 	vertical-align:  middle;
 	margin-right: 5px;
