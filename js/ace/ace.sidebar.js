@@ -172,10 +172,6 @@
 				//and the click is on the icon, not on the menu text then let's cancel event and cancel navigation
 				//Good for touch devices, that when the icon is tapped to see the menu text, navigation is cancelled
 				//navigation is only done when menu text is tapped
-                $('.submenu li').click(function() {
-                    $('.submenu li').removeClass('on');
-                    $(this).addClass('on');
-                });
 
 				if(ace.click_event == 'tap' &&
 					minimized &&

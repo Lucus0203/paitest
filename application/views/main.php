@@ -176,6 +176,10 @@
             railVisible: false,
             alwaysVisible: true
         });
+        $('.submenu li').click(function() {
+            $('.submenu li').removeClass('on');
+            $(this).addClass('on');
+        });
     });
     window.onresize = function(){
         $('.sidebar-scroll-box').slimScroll({
