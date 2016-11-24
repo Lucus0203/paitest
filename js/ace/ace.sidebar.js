@@ -164,14 +164,18 @@
 
 			var minimized = self.minimized && !self.collapsible;
 			//if .sidebar is .navbar-collapse and in small device mode, then let minimized be uneffective
-            
-             
+
+
 			if(!link_element.hasClass('dropdown-toggle')) { //it doesn't have a submenu return
 				//just one thing before we return
 				//if sidebar is collapsed(minimized) and we click on a first level menu item
 				//and the click is on the icon, not on the menu text then let's cancel event and cancel navigation
 				//Good for touch devices, that when the icon is tapped to see the menu text, navigation is cancelled
 				//navigation is only done when menu text is tapped
+                $('.submenu li').click(function() {
+                    $('.submenu li').removeClass('on');
+                    $(this).addClass('on');
+                });
 
 				if(ace.click_event == 'tap' &&
 					minimized &&
@@ -229,10 +233,6 @@
 						//stone 不影响其他的导航//self.hide(this, self.settings.duration, false);
 					}
 				});
-                $(parent_ul).find('.submenu li').click(function() {
-                    $('.submenu li').removeClass('on');
-                    $(this).addClass('on');
-                })
 			}
 
 			if(sub_hidden) { //being shown now
