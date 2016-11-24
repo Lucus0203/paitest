@@ -47,7 +47,7 @@
 <!--                    <a href="#">帮助文档</a>-->
 <!--                </li>-->
                 <li>
-                    <a href="<?php echo site_url('center/index/1') ?>" data-toggle="dropdown" class="dropdown-toggle"><i></i><?php echo $loginInfo['real_name'] ?>&nbsp;<i class="fa fa-angle-down fa-lg"></i> </a>
+                    <a href="<?php echo site_url('center/index/1') ?>" class="dropdown-toggle"><i></i><?php echo $loginInfo['real_name'] ?>&nbsp;<i class="fa fa-angle-down fa-lg"></i> </a>
                     <ul class="dropdown-menu">
                         <li>
                             <a target="backFramework" href="<?php echo site_url('center/index/2') ?>"><span class="icon-circle"></span>修改密码</a>
