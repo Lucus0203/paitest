@@ -94,7 +94,7 @@
                 <li>
                     <a href="<?php echo site_url('course/courselist') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-book"></i><s>课程管理</s></span></a>
                 </li>
-                <li class="open">
+                <li>
                     <a href="JavaScript:;" target="backFramework" class="dropdown-toggle"><span class="menu-text"><i class="fa fa-users"></i><s>人员管理</s></span> <b class="fa fa-angle-right arrow "></b> </a>
                     <ul class="submenu">
                         <li>
@@ -108,9 +108,20 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="<?php echo site_url('ability/index') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-cubes"></i><s>能力模型</s></span> </a>
+                    <a href="JavaScript:;" target="backFramework" class="dropdown-toggle"><span class="menu-text"><i class="fa fa-line-chart"></i><s>能力模型</s></span><b class="fa fa-angle-right arrow "></b></a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="<?php echo site_url('ability/index') ?>" target="backFramework"><i>&bull;</i>模型管理 </a>
+                        </li>
+                        <li>
+                            <a href="JavaScript:;" target="backFramework"><i>&bull;</i>词条管理 </a>
+                        </li>
+                        <li>
+                            <a href="JavaScript:;" target="backFramework"><i>&bull;</i>能力评估 </a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="open">
+                <li>
                     <a href="JavaScript:;" target="backFramework" class="dropdown-toggle"><span class="menu-text"><i class="fa fa-line-chart"></i><s>年度培训计划</s></span><b class="fa fa-angle-right arrow "></b></a>
                     <ul class="submenu">
                         <li>
@@ -121,7 +132,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="open">
+                <li>
                     <a href="JavaScript:;" target="backFramework" class="dropdown-toggle"><span class="menu-text"><i class="fa fa-cogs"></i><s>系统设置</s></span><b class="fa fa-angle-right arrow "></b></a>
                     <ul class="submenu">
                         <li>
