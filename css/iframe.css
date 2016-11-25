@@ -15,7 +15,7 @@ li {
 	list-style: none;
 }
 
-a {
+a,a:focus {
 	text-decoration: none;
     outline:none;
 }
