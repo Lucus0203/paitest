@@ -113,10 +113,10 @@
                         <li>
                             <a href="<?php echo site_url('ability/index') ?>" target="backFramework"><i>&bull;</i>模型管理 </a>
                         </li>
-                        <li>
+                        <li class="nohover">
                             <a href="JavaScript:;" target="backFramework"><i>&bull;</i>词条管理 </a>
                         </li>
-                        <li>
+                        <li class="nohover">
                             <a href="JavaScript:;" target="backFramework"><i>&bull;</i>能力评估 </a>
                         </li>
                     </ul>
@@ -197,6 +197,7 @@
             }
         });
         $('.submenu li').click(function() {
+            if($(this).hasClass('nohover')){return false;}
             $('.nav-list > li a,.nav-list > li,.submenu li').removeClass('on');
             $(this).addClass('on');
         });
