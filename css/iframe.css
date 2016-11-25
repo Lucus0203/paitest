@@ -92,7 +92,7 @@ input::-moz-placeholder,
 .sidebar {
 	width: 205px;
 	float: left;
-	background-color: #58B2DC;
+	background-color: #00bbd3;/*#58B2DC;*/
 }
 
 .navbar-container{
@@ -331,7 +331,7 @@ input::-moz-placeholder,
 	color: #fff;
 }
 .nav > li > a:hover, .nav > li > a:focus,.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
-    background-color: #58b2dc;
+    background-color: #00bbd3;/*#58b2dc;*/
 }
 .nav-list .open > a:hover,.nav-list> li> a:hover,.nav-list .open > a.on,.nav-list li > a.on {
     background-color: #09c;
@@ -417,7 +417,8 @@ input::-moz-placeholder,
 .nav-list> li .submenu> li.on> a,
 .nav-list> li .submenu> li> a:hover {
 	text-decoration: none;
-    color:#336677;
+    color:#ffffff;
+    background-color: #7ed5e0;
 }
 
 
@@ -454,7 +455,7 @@ input::-moz-placeholder,
 .nav-list li.open> .submenu,
 .nav-list> li> .submenu li.open> .submenu {
 	display: block;
-    background-color: #58b2dc;
+    background-color: #00bbd3;/*#58b2dc;*/
 }
 
 .nav-list li>.submenu i{
