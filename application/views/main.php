@@ -44,7 +44,7 @@
 <!--                    <a href="#">客服中心</a>-->
 <!--                </li>-->
                 <li>
-                    <a href="#">使用手册</a>
+                    <a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i>使用手册</a>
                 </li>
                 <li>
                     <a href="<?php echo site_url('center/index/1') ?>" target="backFramework" class="dropdown-toggle"><i></i><?php echo $loginInfo['real_name'] ?>&nbsp;<i class="fa fa-angle-down fa-lg"></i> </a>
