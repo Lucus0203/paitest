@@ -89,7 +89,7 @@
             <p class="companyNum">公司编号：<?php echo $loginInfo['company_code'] ?></p>
             <ul class="nav nav-list">
                 <li>
-                    <a href="<?php echo site_url('index/main') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-home fa-lg"></i><s>首页</s></span></a>
+                    <a class="on" href="<?php echo site_url('index/main') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-home fa-lg"></i><s>首页</s></span></a>
                 </li>
                 <li>
                     <a href="<?php echo site_url('course/courselist') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-book"></i><s>课程管理</s></span></a>

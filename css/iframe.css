@@ -92,7 +92,7 @@ input::-moz-placeholder,
 .sidebar {
 	width: 205px;
 	float: left;
-	background-color: #00bbd3;/*#58B2DC;*/
+	background-color: #39595d;/*#00bbd3;*/
 }
 
 .navbar-container{
@@ -292,7 +292,6 @@ input::-moz-placeholder,
 
 .sidebar {
 	position: relative;
-    border: 1px solid #ebebeb;
 }
 
 .sidebar .iRight {
@@ -331,12 +330,15 @@ input::-moz-placeholder,
 	color: #fff;
 }
 .nav > li > a:hover, .nav > li > a:focus,.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
-    background-color: #00bbd3;/*#58b2dc;*/
+    background-color: #39595d;/*#00bbd3;*/
 }
-.nav-list .open > a:hover,.nav-list> li> a:hover,.nav-list .open > a.on,.nav-list li > a.on {
-    background-color: #09c;
+.nav-list .open > a:hover,.nav-list> li> a:hover,.nav-list li > a.on {
+    background-color: #00bbd3;
     color: #ffffff;
 }
+.nav-list .open > a.on{
+    background-color: #39595d;
+ }
 
 .nav-list> li> a s{ text-decoration:none;white-space:nowrap; margin-left: 8px;}
 
@@ -418,7 +420,7 @@ input::-moz-placeholder,
 .nav-list> li .submenu> li> a:hover {
 	text-decoration: none;
     color:#ffffff;
-    background-color: #7ed5e0;
+    background-color: #00bbd3;
 }
 
 
@@ -455,7 +457,7 @@ input::-moz-placeholder,
 .nav-list li.open> .submenu,
 .nav-list> li> .submenu li.open> .submenu {
 	display: block;
-    background-color: #00bbd3;/*#58b2dc;*/
+    background-color: #39595d;/*#00bbd3;*/
 }
 
 .nav-list li>.submenu i{
@@ -1719,4 +1721,4 @@ no_such_element:-o-prefocus,
 .topTabs li.cur a{
 	color: #f55;
 }
-.companyNum{ font-size: 16px; color: #fff; text-align: center; border-bottom:  1px solid #d2d2d2; line-height: 42px;}
+.companyNum{ font-size: 16px; color: #fff; text-align: center; border-bottom:  1px solid #d2d2d2; line-height: 42px;margin: 0;}
