@@ -86,10 +86,10 @@
 
         <!-- /.sidebar-shortcuts -->
         <div class="sidebar-scroll-box">
-            <p class="companyNum">公司编号：<?php echo $loginInfo['company_code'] ?></p>
+            <p class="companyNum"><span>公司编号：</span><?php echo $loginInfo['company_code'] ?></p>
             <ul class="nav nav-list">
                 <li>
-                    <a class="on" href="<?php echo site_url('index/main') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-home fa-lg"></i><s>首页</s></span></a>
+                    <a class="on" href="<?php echo site_url('index/main') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-home fa-lg" style="font-size: 22px;"></i><s>首页</s></span></a>
                 </li>
                 <li>
                     <a href="<?php echo site_url('course/courselist') ?>" target="backFramework"><span class="menu-text"><i class="fa fa-book"></i><s>课程管理</s></span></a>
@@ -122,7 +122,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="JavaScript:;" target="backFramework" class="dropdown-toggle"><span class="menu-text"><i class="fa fa-line-chart"></i><s>年度培训计划</s></span><b class="fa fa-angle-right arrow "></b></a>
+                    <a href="JavaScript:;" target="backFramework" class="dropdown-toggle"><span class="menu-text"><i class="fa fa-calendar-check-o"></i><s>年度培训计划</s></span><b class="fa fa-angle-right arrow "></b></a>
                     <ul class="submenu">
                         <li>
                             <a href="<?php echo site_url('annualsurvey/index') ?>" target="backFramework"><i>&bull;</i>年度调研 </a>
@@ -195,6 +195,16 @@
                 $(this).addClass('on').find('a').eq(0).addClass('on');
                 $('.submenu li').removeClass('on');
             }
+            $(this).find('.submenu').removeClass('hoverSubmenu');
+            if($(this).parent().parent().parent().parent().hasClass('menu-min')){
+                $(this).addClass('open').find('.submenu').show();
+            }
+        }).hover(function(){
+            if($('#sidebar').hasClass('menu-min')){
+                $(this).find('.submenu').addClass('hoverSubmenu');
+            }
+        },function(){
+            $(this).find('.submenu').removeClass('hoverSubmenu');
         });
         $('.submenu li').click(function() {
             if($(this).hasClass('nohover')){return false;}
