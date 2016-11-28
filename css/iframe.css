@@ -331,13 +331,16 @@ input::-moz-placeholder,
 .nav > li > a:hover, .nav > li > a:focus,.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
     background-color: #39595d;/*#00bbd3;*/
 }
-.nav-list .open > a:hover,.nav-list> li> a:hover,.nav-list li > a.on {
+
+.nav-list .open > a.on{
+    background-color: #39595d;
+}
+
+.nav-list .open > a:hover,.nav-list> li> a:hover,.nav-list li > a.on,.nav-list li.on > a.on {
     background-color: #00bbd3;
     color: #ffffff;
 }
-.nav-list .open > a.on{
-    background-color: #39595d;
- }
+
 
 .nav-list> li> a s{ text-decoration:none;white-space:nowrap; margin-left: 8px;}
 
