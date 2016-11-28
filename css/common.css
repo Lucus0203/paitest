@@ -2117,6 +2117,9 @@ input:checked+ .slider:before {
 	padding-top: 20px;
 }
 
+/* noviceGuide end */
+
+
 .surveySaveMsg {
 	position: fixed;
 	top: 70px;

@@ -20,6 +20,7 @@
 
     });
 </script>
+<link rel="stylesheet" href="<?php echo base_url(); ?>css/common.css" />
 <div class="noviceGuide">
     <div class="bg"></div>
     <div class="noviceGuideInner">
