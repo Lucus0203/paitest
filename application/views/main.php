@@ -163,6 +163,7 @@
     </div>
 
 </div>
+<?php if($loginInfo['guid_step']!=5){$this->load->view ( 'walkthrough' );} ?>
 
 <!--[if !IE]> -->
 <script type="text/javascript">
