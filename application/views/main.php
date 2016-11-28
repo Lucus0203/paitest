@@ -163,7 +163,6 @@
     </div>
 
 </div>
-<?php if($loginInfo['guid_step']!=5){$this->load->view ( 'walkthrough' );} ?>
 
 <!--[if !IE]> -->
 <script type="text/javascript">
@@ -241,6 +240,7 @@
 <script src="js/ace/ace.js"></script>
 <script src="js/ace/ace.sidebar.js?112101"></script>
 <script src="js/ace/ace.sidebar-scroll-1.js"></script>
+<?php if($loginInfo['guid_step']!=5){$this->load->view ( 'walkthrough' );} ?>
 </body>
 
 </html>
